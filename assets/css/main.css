@@ -2632,18 +2632,6 @@ body {
   }
 }
 
-@media (max-width: 40.625em) {
-  body {
-    font-size: 1.2em;
-  }
-}
-
-@media (max-width: 28.125em) {
-  body {
-    font-size: 1.1em;
-  }
-}
-
 h1, h2, h3, h4, h5, h6, p, a, hr, ul, li {
   color: #333333;
   margin: 0;
@@ -2978,11 +2966,14 @@ body {
   }
 }
 
+.js-wrap, .js-sections {
+  overflow: hidden;
+}
+
 .js-sections {
   width: 100%;
   height: 100vh;
   padding: calc(2*(100vw/30));
-  overflow: hidden;
 }
 
 @media (max-width: 56.25em) {
