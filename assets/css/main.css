@@ -3053,7 +3053,7 @@ body {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 100%;
+  border: 2px solid blue;
   white-space: nowrap;
 }
 
