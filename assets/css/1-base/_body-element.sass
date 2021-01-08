@@ -1,10 +1,13 @@
 // Prevent Firefox Scrollbar Jump
 html
-  overflow-y: scroll
+  height: -webkit-fill-available
+  overflow-y: hidden
 
 body
   // background: $tet-lightgrey
   // font-size: $base-font-size*0.9
+  min-height: 100vh
+  min-height: -webkit-fill-available
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)))
   line-height: $base-line-height
   font-family: Arial, Helvetica, sans-serif

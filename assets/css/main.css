@@ -2565,10 +2565,13 @@ template {
 }
 
 html {
-  overflow-y: scroll;
+  height: -webkit-fill-available;
+  overflow-y: hidden;
 }
 
 body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
@@ -2967,7 +2970,7 @@ body {
 }
 
 .js-wrap, .js-sections {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .js-sections {
