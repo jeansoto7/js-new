@@ -14,7 +14,7 @@
 .js-logo-circle
   width: $module
   margin-top: $half-module
-  z-index: 6
+  z-index: 101
   position: absolute
   left: 50%
   // top: 50%
@@ -23,7 +23,7 @@
 .nav-box
   pointer-events: none
   position: fixed
-  z-index: 5
+  z-index: 100
   top: 0
   width: 100%
   height: 100%
@@ -34,6 +34,34 @@
     height: 100%
     border: $red-border
 
+@media #{$mc-xxxxlarge}
+  .nav-box
+    padding: $double-module
+
+  .js-logo-circle
+    width: $double-module
+    margin-top: $module
+
+
+@media #{$mq-small}
+
+@media #{$mq-medium}
+  .background-construction
+    width: 125%
+    height: 110%
+    background:
+      position: center center
+      size: cover
+
+@media #{$mq-large}
+
+@media #{$mq-mlarge}
+
+@media #{$tq-large}
+
+@media #{$mc-large}
+
+@media #{$mc-small}
 
 
 

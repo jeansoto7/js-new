@@ -1,9 +1,3 @@
-/*!
- * Bootstrap Grid v4.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @-ms-viewport {
   width: device-width;
@@ -2582,6 +2576,74 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+@media (max-width: 48em) {
+  body {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 48.063em) {
+  body {
+    font-size: 0.8em;
+    line-height: 1.65;
+  }
+}
+
+@media (min-width: 64em) {
+  body {
+    font-size: 0.9em;
+    line-height: 1.8;
+  }
+}
+
+@media (min-width: 85.375em) {
+  body {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 100em) {
+  body {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 120em), (min-device-width: 64em) and (max-device-width: 85.375em) and (orientation: portrait) {
+  body {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 160em) {
+  body {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 240em) {
+  body {
+    font-size: 2.4em;
+  }
+}
+
+@media (min-device-width: 100em) and (max-device-width: 160em) and (orientation: portrait) {
+  body {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 40.625em) {
+  body {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 28.125em) {
+  body {
+    font-size: 1.1em;
+  }
+}
+
 h1, h2, h3, h4, h5, h6, p, a, hr, ul, li {
   color: #333333;
   margin: 0;
@@ -2825,7 +2887,7 @@ body {
 .js-logo-circle {
   width: calc(100vw/30);
   margin-top: calc(100vw/60);
-  z-index: 6;
+  z-index: 101;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -2836,7 +2898,7 @@ body {
 .nav-box {
   pointer-events: none;
   position: fixed;
-  z-index: 5;
+  z-index: 100;
   top: 0;
   width: 100%;
   height: 100%;
@@ -2847,6 +2909,25 @@ body {
   position: relative;
   height: 100%;
   border: calc(100vw/360) solid #cc3333;
+}
+
+@media (max-width: 56.25em) {
+  .nav-box {
+    padding: calc(2*(100vw/30));
+  }
+  .js-logo-circle {
+    width: calc(2*(100vw/30));
+    margin-top: calc(100vw/30);
+  }
+}
+
+@media (min-width: 64em) {
+  .background-construction {
+    width: 125%;
+    height: 110%;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 .the-grid .grid-line {
@@ -2882,11 +2963,32 @@ body {
   right: calc(2*(100vw/30));
 }
 
+@media (max-width: 56.25em) {
+  .the-grid .line-horizontal.line1 {
+    top: calc(4*(100vw/30));
+  }
+  .the-grid .line-horizontal.line2 {
+    bottom: calc(4*(100vw/30));
+  }
+  .the-grid .line-vertical.line3 {
+    left: calc(4*(100vw/30));
+  }
+  .the-grid .line-vertical.line4 {
+    right: calc(4*(100vw/30));
+  }
+}
+
 .js-sections {
   width: 100%;
   height: 100vh;
   padding: calc(2*(100vw/30));
   overflow: hidden;
+}
+
+@media (max-width: 56.25em) {
+  .js-sections {
+    padding: calc(4*(100vw/30));
+  }
 }
 
 .home-content {
@@ -2899,12 +3001,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-}
-
-.home-content .top-text {
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .home-content .top-text .construction-text {
@@ -2923,6 +3019,37 @@ body {
 
 .home-content .logo-jean-img .center-img-logo {
   width: 100%;
+}
+
+@media (max-width: 56.25em) {
+  .home-content .top-text {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .home-content .top-text .construction-text {
+    width: 40vmin;
+  }
+  .home-content .logo-jean-img {
+    width: 50vmin;
+  }
+}
+
+@media (min-width: 64em) {
+  .home-content .top-text .construction-text {
+    width: 40vmin;
+  }
+}
+
+@media (max-width: 34.375em) {
+  .home-content .top-text .construction-text {
+    width: 50vmin;
+  }
+  .home-content .logo-jean-img {
+    width: 70vmin;
+  }
 }
 
 .container-button {
@@ -3113,7 +3240,7 @@ body {
 
 .animated-arrow > .arrow-main > .arrow-text {
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 1.2em;
   margin: 0 4px 0 4px;
 }
 
@@ -3127,4 +3254,62 @@ body {
 
 .animated-arrow > .arrow-main > .the-arrow {
   position: relative;
+}
+
+@media (max-width: 56.25em) {
+  .container-button {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 34.375em) {
+  .arrow-text {
+    font-size: 1em !important;
+    margin: 0 2.66667px 0 2.66667px !important;
+  }
+}
+
+@media (max-width: 25em) {
+  .arrow-text {
+    font-size: 0.8em !important;
+  }
+  .the-arrow {
+    width: 40px !important;
+  }
+  .the-arrow.-right > .shaft {
+    width: 40px !important;
+  }
+  .animated-arrow:hover > .the-arrow.-left > .shaft {
+    width: 40px !important;
+  }
+  .animated-arrow:hover > .arrow-main {
+    -webkit-transform: translateX(56px);
+        -ms-transform: translateX(56px);
+            transform: translateX(56px);
+  }
+}
+
+@media (max-width: 21.875em) {
+  .arrow-text {
+    font-size: 0.6em !important;
+  }
+  .the-arrow {
+    width: 30px !important;
+  }
+  .the-arrow.-right > .shaft {
+    width: 30px !important;
+  }
+  .animated-arrow:hover > .the-arrow.-left > .shaft {
+    width: 30px !important;
+  }
+  .animated-arrow:hover > .arrow-main {
+    -webkit-transform: translateX(46px);
+        -ms-transform: translateX(46px);
+            transform: translateX(46px);
+  }
 }

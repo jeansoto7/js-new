@@ -126,7 +126,7 @@ $arrow-head-thickness: $shaft-thickness
     transition: all 0.2s
     > .arrow-text
       font-weight: bold
-      font-size: $base-font-size*0.8
+      font-size: $base-font-size*1.2
       margin: 0 $text-arrow-space/4 0 $text-arrow-space/4
       // line-height: 1.5
     &:hover .red-text
@@ -136,3 +136,74 @@ $arrow-head-thickness: $shaft-thickness
     > .the-arrow
       // margin-left: $text-arrow-space
       position: relative
+
+
+@media #{$mc-xxxxlarge}
+  .container-button
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    max-width: 100%
+    // border: 2px solid blue
+
+@media #{$mc-mmedium}
+  .arrow-text
+    font-size: $base-font-size !important
+    margin: 0 $text-arrow-space/6 0 $text-arrow-space/6 !important
+
+
+@media #{$mc-jsmall}
+  .arrow-text
+    font-size: $base-font-size*0.8 !important
+
+  .the-arrow
+    width: 40px !important
+
+    &.-right
+      > .shaft
+        width: 40px !important
+
+  .animated-arrow
+    &:hover
+      > .the-arrow.-left
+        > .shaft
+          width: 40px !important
+      > .arrow-main
+        transform: translateX(40px + $text-arrow-space)
+
+@media #{$mc-asmall}
+  .arrow-text
+    font-size: $base-font-size*0.6 !important
+
+  .the-arrow
+    width: 30px !important
+
+    &.-right
+      > .shaft
+        width: 30px !important
+
+  .animated-arrow
+    &:hover
+      > .the-arrow.-left
+        > .shaft
+          width: 30px !important
+      > .arrow-main
+        transform: translateX(30px + $text-arrow-space)
+
+@media #{$mq-medium}
+
+@media #{$mq-large}
+
+@media #{$mq-mlarge}
+
+@media #{$mq-xlarge}, #{$tq-medium}
+
+@media #{$mq-xxlarge}
+
+@media #{$mq-xxxlarge}
+
+@media #{$tq-large}
+
+@media #{$mc-large}
+
+@media #{$mc-small}
