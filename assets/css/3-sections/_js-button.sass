@@ -10,7 +10,7 @@ $arrow-head-thickness: $shaft-thickness
   display: flex
   align-items: flex-end
   // height: 100%
-  border: 2px solid blue
+  // border: 2px solid blue
   white-space: nowrap
   ul
     li
@@ -145,7 +145,9 @@ $arrow-head-thickness: $shaft-thickness
     left: 50%
     transform: translateX(-50%)
     max-width: 100%
-    // border: 2px solid blue
+    bottom: 0
+  // .arrow-text
+    // font-size: $base-font-size*0.6
 
 @media #{$mc-mmedium}
   .arrow-text
@@ -159,6 +161,7 @@ $arrow-head-thickness: $shaft-thickness
 
   .the-arrow
     width: 40px !important
+    margin: -$text-arrow-space/2 $text-arrow-space/4 0 $text-arrow-space/4
 
     &.-right
       > .shaft
@@ -175,6 +178,7 @@ $arrow-head-thickness: $shaft-thickness
 @media #{$mc-asmall}
   .arrow-text
     font-size: $base-font-size*0.6 !important
+    margin: 0 $text-arrow-space/8 0 $text-arrow-space/8 !important
 
   .the-arrow
     width: 30px !important
@@ -191,20 +195,42 @@ $arrow-head-thickness: $shaft-thickness
       > .arrow-main
         transform: translateX(30px + $text-arrow-space)
 
-@media #{$mq-medium}
+@media #{$mc-bsmall}
+  .arrow-text
+    font-size: $base-font-size*0.45 !important
+    margin: -$text-arrow-space/2 $text-arrow-space/8 0 $text-arrow-space/8
 
-@media #{$mq-large}
+  .the-arrow
+    width: 20px !important
 
-@media #{$mq-mlarge}
+    &.-right
+      > .shaft
+        width: 20px !important
 
-@media #{$mq-xlarge}, #{$tq-medium}
+  .animated-arrow
+    &:hover
+      > .the-arrow.-left
+        > .shaft
+          width: 20px !important
+      > .arrow-main
+        transform: translateX(20px + $text-arrow-space)
 
-@media #{$mq-xxlarge}
+@media #{$mc-csmall}
+  .arrow-text
+    font-size: $base-font-size*0.4 !important
+    margin: 0 $text-arrow-space/12 0 $text-arrow-space/12 !important
 
-@media #{$mq-xxxlarge}
+  .the-arrow
+    width: 15px !important
 
-@media #{$tq-large}
+    &.-right
+      > .shaft
+        width: 15px !important
 
-@media #{$mc-large}
-
-@media #{$mc-small}
+  .animated-arrow
+    &:hover
+      > .the-arrow.-left
+        > .shaft
+          width: 15px !important
+      > .arrow-main
+        transform: translateX(15px + $text-arrow-space)
